@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for KunYangiliklar in object_list %}
+<div class="mexbox">
+    {% comment %} asosiy barcha sahifalar uchun asosiy class {% endcomment %}
+<div class="mexbut"> 
+    <a href="{% url 'kunyangiliklar_detail' KunYangiliklar.pk %}">$ {{KunYangiliklar.title}}</a>
+
+</div>
+</div>
+
+{% endfor %}
+{% endblock content %}
+

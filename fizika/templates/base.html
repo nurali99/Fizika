@@ -1,0 +1,82 @@
+{% load static %}
+<link href="{% static 'css/base.css' %}" rel='stylesheet'>
+<header>  
+  <nav>
+    <a href="https://jspi.uz/ru/institut/umumiy-malumotlar/" class="logo">JDPU</a>
+    <ul>
+      <li><a href="{%url 'mex' %}" class="logo">Mexanika</a></li>
+      <li><a href="{%url 'molekulyar' %}" class="logo">Molekulyar</a></li>
+      <li><a href="{%url 'elektrostatika' %}" class="logo">Elektrostatika</a></li>
+      <li><a href="{%url 'optika' %}" class="logo">Optika</a></li>
+      <li><a href="{%url 'atomyadro' %}" class="logo">Atom Yadro</a></li>
+      <li><a href="{%url 'muallif' %}" class="logo">Muallif</a></li>
+      <li><a href="{%url 'kitob' %}" class="logo">Kitoblar</a></li>
+      <li><a href="{%url 'kunyangiliklar' %}" class="logo">Kun yangiliklari</a></li>
+    </ul>
+  </nav>
+  <h1>FizikA</h1>
+  <p>Samolyot texnologiyasi murakkab bo'lishi mumkin, ammo uchish  <span>FIZIKA</span>si oddiy </p>
+  {% comment %} <div class="xirafon"></div> {% endcomment %}
+</header>
+{% block content %}
+
+{% endblock content %}
+
+<footer>
+  <div class="price">
+    <div class="price-box">
+      <h2>Mexanika <span> | </span></h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=CzgdiKChsCg">To'g'ri chiziqli tekis harakat</a></li>
+        <li><a href="https://www.youtube.com/watch?v=RBOjtQaZiLQ">To'g'ri chiziqli notekis harakat</a></li>
+        <li><a href="https://www.youtube.com/watch?v=9R31YTfZX9U">Jismlarning erkin tushishi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=mnCPZku_4tI">Egri chiziqli harakat</a></li>
+        <li><a href="https://www.youtube.com/watch?v=JzfpAaTaRDw">Statika harakat</a></li>
+        <li><a href="https://www.youtube.com/watch?v=DXifX7buE3c">Mexanikani saqlanishi qonuni</a></li>
+        <li><a href="https://www.youtube.com/watch?v=cYegI4oqPj4">Suyuqlik va gaz mexanikasi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=yUapuF-2BJw">Aerostatika va aerodinamika</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Vs2WaJZyM6k">Mexanik Tebranish va To'lqinlar</a></li>
+        <li><a href="https://lib.jspi.uz/storage/uploads/files/Nazariy%20mexanika%20fanidan%20qisqa%20masalalar%20to%60plami.%20%D0%9A%D0%B5%D1%80%D0%B5.%D0%9E.pdf">Masalalar</a></li>
+      </ul>
+    </div>
+    <div class="price-box">
+      <h2>Molekulyar fizika <span>||</span></h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=R3zu_jo_Di4">Molekulyar kinetik nazariya</a></li>
+        <li><a href="https://www.youtube.com/watch?v=FYZe6z6M8b8">Temperatura</a></li>
+        <li><a href="https://www.youtube.com/watch?v=n9-WU0admPg">Ideal gaz qonuni</a></li>
+        <li><a href="https://www.youtube.com/watch?v=cYegI4oqPj4&t=21s">Gaz va suyuqlikning harakati</a></li>
+        <li><a href="https://www.youtube.com/watch?v=W39DcGB-EAQ">Qattiq jismlarning hossalari</a></li>
+        <li><a href="https://www.youtube.com/watch?v=AKmzDCKMYVs">Ichki energiya va ish</a></li>
+        <li><a href="https://www.youtube.com/watch?v=OMnBHMpuRds">Issiqlik miqdori</a></li>
+        <li><a href="https://www.youtube.com/watch?v=S_g1aOUkoJA">Termodinamika qonuni</a></li>
+        <li><a href="https://arm.tdpushf.uz/kitoblar/fayl_1029_20210520.pdf">Masalalar</a></li>
+      </ul>
+    </div>
+    <div class="price-box">
+      <h2>Elektrostatika <span>|||</span></h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=ae09deyW9JQ">O'zgarmas elektr toki</a></li>
+        <li><a href="https://www.youtube.com/watch?v=sJHTz_oSFwI">Turli muhitlardagi elektr toki</a></li>
+        <li><a href="https://www.youtube.com/watch?v=tv3Nygs7xjo">Magnit hodisalari</a></li>
+        <li><a href="https://www.youtube.com/watch?v=7aFz7yVBczc">Elektromagnitik hodisalar</a></li>
+        <li><a href="https://www.youtube.com/watch?v=YOTHvx8hc1M">Elektromagnit Tebranishlar</a></li>
+        <li><a href="https://staff.tiiame.uz/storage/users/141/books/KR9PS8AuziDywKFKDeEv6zmsSsN997oLV5jpucbO.pdf">Masalalar</a></li>
+      </ul>
+    </div>
+    <div class="price-box">
+      <h2>Optika Atom yadro<span>||||</span></h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=YmT3Dd8Nj4s">Optika va nisbiylik nazariyasi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=0JMQXOVawyM">To'lqin optikasi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Ddcv_6kHMhM">Nisbiylik nazariyasi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=5HThtoLMTcQ">Kvant optikasi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=JGPA6woYGkQ">Atom fizikasi</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Yw80mEE6198">Yadro fizikasi</a></li>
+        <li><a href="https://lib.jspi.uz/storage/uploads/files/Fizika%20(optika%20atom%20va%20yadro%20fizikasi).%20%D0%91%D0%BE%D0%B7%D0%BE%D1%80%D0%BE%D0%B2a.pdf">Masalalar</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+

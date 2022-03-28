@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for AtomYadro in object_list %}
+<div class="mexbox">
+<div class="mexbut"> 
+    <a href="{% url 'atomyadro_detail' AtomYadro.pk %}">{{AtomYadro.title}}</a>
+</div>
+</div>
+{% endfor %}
+{% endblock content %}
+

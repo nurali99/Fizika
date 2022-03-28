@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for Molekulyar in object_list %}
+<div class="mexbox">
+<div class="mexbut">
+<a href="{% url 'molekulyar_detail' Molekulyar.pk %}">&  {{Molekulyar.title}}</a>
+</div>
+</div>
+{% endfor %}
+{% endblock content %}
+

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for Mexanika in object_list %}
+<div class="mexbox">
+    {% comment %} asosiy barcha sahifalar uchun asosiy class {% endcomment %}
+<div class="mexbut"> 
+    <a href="{% url 'mex_detail' Mexanika.pk %}">& {{Mexanika.title}}</a>
+</div>
+</div>
+{% endfor %}
+{% endblock content %}
+

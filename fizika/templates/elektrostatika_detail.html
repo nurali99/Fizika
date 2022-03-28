@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="detalbox">
+<p>Mavzu : {{elektrostatika.title}}</p>
+</div>
+<div class="mextana">
+<p class="mextana1">{{elektrostatika.body}}</p>
+<div class="mextana2" >
+{% if elektrostatika.rasm %}
+<img src="{{elektrostatika.rasm.url}}" alt="{{elektrostatika.title}}">
+{% endif %}
+</div>
+</div>
+<div class="mexcontact">
+    <div class="mexcontact1">
+        <p>Muallif : {{elektrostatika.author}}</p>
+    </div>
+    <div class="mexcontact2">
+        <p>Vaqt : {{elektrostatika.time}}</p>
+    </div>     
+</div>
+{% endblock content %}

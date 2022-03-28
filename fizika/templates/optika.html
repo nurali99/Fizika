@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for Optika in object_list %}
+<div class="mexbox">
+<div class="mexbut"> 
+    <a href="{% url 'optika_detail' Optika.pk %}">& {{Optika.title}}</a>
+</div>
+</div>
+
+{% endfor %}
+{% endblock content %}
+

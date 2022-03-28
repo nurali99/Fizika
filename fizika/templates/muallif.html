@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% for Muallif in object_list %}
+<section>
+    <div class="right-nike">
+        <div class="box">
+            <div class="box-img">
+                {% if Muallif.rasm %}
+                <img width="300px" height="350px" src="{{Muallif.rasm.url}}" alt="{{Muallif.title}}">
+                {% endif %}
+            </div>
+            <div class="box-text">
+                <h2>{{Muallif.I_F_SH}}</h2>
+                <p class="abzas">
+                    {{Muallif.text}}</p>
+                </div>
+            </div> 
+
+</section>
+{% endfor %}
+{% endblock content %}
+

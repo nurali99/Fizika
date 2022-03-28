@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="detalbox">
+    <p class="mexdet">Mavzu : {{molekulyar.title}}</p>
+</div>
+<div class="mextana">
+<p class="mextana1">{{molekulyar.body}}</p>
+<div class="mextana2">
+{% if molekulyar.rasm %}
+<img src="{{molekulyar.rasm.url}}" alt="{{molekulyar.title}}">
+{% endif %}
+</div>
+</div>
+<div class="mexcontact">
+    <div class="mexcontact1">
+        <p>Muallif : {{molekulyar.author}}</p>
+    </div>
+    <div class="mexcontact2">
+        <p>Vaqt : {{molekulyar.time}}</p>
+    </div>
+</div>
+{% endblock content %}
